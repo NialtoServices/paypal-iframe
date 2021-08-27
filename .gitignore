@@ -1,0 +1,32 @@
+# Ignore OS specific files
+.DS_Store
+.Trashes
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editors
+.idea
+.nova
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node JS
+node_modules/
+
+# Build files
+dist/
+
+# Cache
+.cache/
+.parcel-cache/
