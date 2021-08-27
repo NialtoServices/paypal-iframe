@@ -1,0 +1,22 @@
+{
+  "name": "paypal-iframe",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "PayPal Smart Buttons sandboxed in an <iframe> element.",
+  "author": "Nialto Services",
+  "private": true,
+  "browserslist": "> 0.1%",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "yarn run parcel build --no-source-maps --dist-dir ./dist ./src/paypal-iframe.html",
+    "package": "yarn clean && yarn build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "@paypal/paypal-js": "^4.0.8",
+    "promise-polyfill": "^8.2.0"
+  }
+}

@@ -24,9 +24,6 @@ yarn-error.log*
 # Node JS
 node_modules/
 
-# Build files
-dist/
-
 # Cache
 .cache/
 .parcel-cache/
