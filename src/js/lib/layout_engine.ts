@@ -38,14 +38,16 @@ export class LayoutEngine {
 
     const frameElement = window.frameElement as HTMLElement
     if (frameElement) {
-      frameElement.style.width = '100%'
-      frameElement.style.height = this.isOverlayClassEnabled ? '100%' : `${document.body.offsetHeight}px`
       frameElement.style.position = this.isOverlayClassEnabled ? 'fixed' : ''
       frameElement.style.top = this.isOverlayClassEnabled ? '0' : ''
+      frameElement.style.bottom = this.isOverlayClassEnabled ? '0' : ''
       frameElement.style.left = this.isOverlayClassEnabled ? '0' : ''
       frameElement.style.right = this.isOverlayClassEnabled ? '0' : ''
-      frameElement.style.bottom = this.isOverlayClassEnabled ? '0' : ''
       frameElement.style.zIndex = this.isOverlayClassEnabled ? '2147483647' : ''
+      frameElement.style.width = '100%'
+      frameElement.style.height = this.isOverlayClassEnabled ? '100%' : `${document.body.offsetHeight}px`
+      frameElement.style.margin = this.isOverlayClassEnabled ? '0' : ''
+      frameElement.style.padding = this.isOverlayClassEnabled ? '0' : ''
     }
   }
 }
